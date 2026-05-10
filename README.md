@@ -5,30 +5,29 @@ AI-powered web application that extracts factual claims from PDF documents and v
 ## Features
 
 - Upload PDF documents
-- Automatic factual claim extraction
-- AI-powered fact verification
-- Live web context verification
-- Categorization:
-  - Verified
-  - False
-  - Inaccurate
-- Modern responsive UI
-- Dynamic PDF parsing support
+- Extract factual claims automatically
+- Verify claims using AI and live web search
+- Categorize claims as Verified, False, or Inaccurate
+- Display structured explanations and correct facts
+- Modern responsive frontend UI
+- Supports dynamic PDF text extraction
 
 ## Tech Stack
 
 ### Frontend
 - React.js
-- CSS
 - Vite
+- CSS
 
 ### Backend
 - Node.js
 - Express.js
-- OpenRouter API
-- Serper API
+- Multer
+- Axios
 - pdf-parse
 - pdf2json
+- OpenRouter API
+- Serper API
 
 ## Workflow
 
@@ -42,25 +41,33 @@ PDF Upload → Text Extraction → Claim Extraction → Web Search → AI Verifi
 cd backend
 npm install
 npm start
-Frontend
+```
+
+### Frontend
+
+```bash
 cd frontend
 npm install
 npm run dev
-Environment Variables
+```
+## Environment Variables
 
-Create a .env file inside the backend folder:
+Create a .env file inside the backend folder.
 
-OPENROUTER_API_KEY=your_api_key
+```env
+OPENROUTER_API_KEY=your_openrouter_api_key
+SERPER_API_KEY=your_serper_api_key
 
-SERPER_API_KEY=your_api_key
+```
 
-Future Improvements
-OCR support for scanned PDFs
-Multi-language support
-Confidence score for claims
-Exportable verification reports
-Authentication system
+## Future Improvements
 
-Author
+- OCR support for scanned PDFs
+- Confidence score for each claim
+- Exportable fact-checking report
+- Multi-language support
+- User authentication
+
+## Author
 
 Sudhanshu Pandey
