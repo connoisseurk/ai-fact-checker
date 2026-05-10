@@ -1,0 +1,102 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+.uploadBox {
+  border: 2px dashed rgba(255,255,255,0.4);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 20px;
+  color: white;
+}
+
+button {
+  background: #00c6ff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+.loading {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.results {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.status {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin: 15px 0;
+  color: black;
+  font-weight: bold;
+}
+
